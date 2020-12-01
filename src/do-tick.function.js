@@ -1,5 +1,5 @@
 const PubSub = require('@google-cloud/pubsub')
-const { context } = require('@smackchat/cloud-context') // @todo: rename to { env }
+const { context } = require('@blast-engine/context') // @todo: rename to { env }
 
 process.env['GOOGLE_APPLICATION_CREDENTIALS'] = context.serviceKeyFilepath()
 const pubsub = new PubSub()

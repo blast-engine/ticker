@@ -1,5 +1,5 @@
-const { context } = require('@smackchat/cloud-context')
-const { cloud } = require('@smackchat/cloud-control')
+const { context } = require('@blast-engine/context')
+const { computeEngine } = require('@blast-engine/cloud-control')
 
 class CloudTickerController {
 
@@ -20,7 +20,7 @@ class CloudTickerController {
   }
 
   ssh() {
-    return cloud.computeEngine.replaceProcessWithCloudSSH(
+    return computeEngine.replaceProcessWithCloudSSH(
       context.computeInstance('ticker')
     )
   }

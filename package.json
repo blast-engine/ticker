@@ -1,6 +1,6 @@
 {
-  "name": "@smackchat/ticker",
-  "version": "0.0.1",
+  "name": "@blast-engine/ticker",
+  "version": "2.0.0",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack",
@@ -11,8 +11,8 @@
     "cloud-ssh": "node src/cloud-ssh.script.js"
   },
   "dependencies": {
-    "@smackchat/cloud-context": "^0.0.0",
-    "@smackchat/cloud-control": "^0.0.0",
+    "@blast-engine/context": "^2.0.0",
+    "@blast-engine/cloud-control": "^2.0.0",
     "@google-cloud/pubsub": "0.19.0",
     "forever": "^0.15.3",
     "forever-monitor": "^1.7.1",
