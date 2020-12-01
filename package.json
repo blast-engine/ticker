@@ -1,0 +1,23 @@
+{
+  "name": "@smackchat/ticker",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "webpack",
+    "start-interactive": "node src/start-interactive.script.js",
+    "start-daemon": "node src/start-daemon.script.js",
+    "stop-daemon": "node src/stop-daemon.script.js",
+    "list-daemons": "node src/list-daemons.script.js",
+    "cloud-ssh": "node src/cloud-ssh.script.js"
+  },
+  "dependencies": {
+    "@smackchat/cloud-context": "^0.0.0",
+    "@smackchat/cloud-control": "^0.0.0",
+    "@google-cloud/pubsub": "0.19.0",
+    "forever": "^0.15.3",
+    "forever-monitor": "^1.7.1",
+    "inquirer": "^6.2.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
