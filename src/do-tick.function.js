@@ -1,10 +1,13 @@
 const PubSub = require('@google-cloud/pubsub')
-const { context } = require('@blast-engine/context') // @todo: rename to { env }
+const { getContext } = require('./get-context.fn')
 
-process.env['GOOGLE_APPLICATION_CREDENTIALS'] = context.serviceKeyFilepath()
-const pubsub = new PubSub()
 
-function doTick() {
+const doTick = async () => {
+  const { serviceKeyFilePath } = await getContext()
+
+  process.env['GOOGLE_APPLICATION_CREDENTIALS'] = serviceKeyFilePath
+  const pubsub = new PubSub()
+
   return pubsub
     .topic('tick')
     .publisher()
