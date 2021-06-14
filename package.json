@@ -1,6 +1,6 @@
 {
   "name": "@blast-engine/ticker",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack",
@@ -14,10 +14,10 @@
     "@blast-engine/cloud-control": "^2.0.0",
     "@blast-engine/context": "^2.0.0",
     "@google-cloud/pubsub": "0.19.0",
-    "forever": "^0.15.3",
-    "forever-monitor": "^1.7.1",
-    "inquirer": "^6.2.0",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "forever": "4.0.1",
+    "forever-monitor": "3.0.3",
+    "inquirer": "8.1.0",
+    "webpack": "5.38.1",
+    "webpack-cli": "4.7.2"
   }
 }
