@@ -1,9 +1,10 @@
 {
   "name": "@blast-engine/ticker",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack",
+    "tick-once": "node src/tick-once.script.js",
     "start-interactive": "node src/start-interactive.script.js",
     "start-daemon": "node src/start-daemon.script.js",
     "stop-daemon": "node src/stop-daemon.script.js",
